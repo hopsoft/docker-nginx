@@ -19,7 +19,7 @@ rm -rf ./docker-nginx
 ## Starting the container
 
 ```sh
-sudo docker run --name nginx -d -p 80:80 -p 443:443 -v /etc/nginx:/etc/nginx hopsoft/nginx
+sudo docker run --name nginx -d -p 80:80 -p 443:443 -v /etc/nginx:/etc/nginx:r hopsoft/nginx
 ```
 
 ## Reconfigure & Restart
