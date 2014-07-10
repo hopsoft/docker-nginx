@@ -4,10 +4,10 @@ This image contains a basic install of nginx-extras.
 
 ## Setup
 
-Create an nginx configuration directory on the host &
-configure to meet your needs.
+Create an nginx configuration directory on the host at: `/etc/nginx`
+Configure nginx to meet your needs.
 
-You will find an complete example of the [default nginx config here](#).
+You can find a complete example of the [default nginx config here](https://github.com/hopsoft/docker-nginx/tree/master/nginx_conf).
 
 ## Starting the container
 
