@@ -7,7 +7,9 @@ This image contains a basic install of nginx-extras.
 Create an nginx configuration directory on the host at `/etc/nginx`,
 then configure nginx to meet your needs.
 
-You can create the default configuration like so.
+__Important__: Be sure to add `daemon off` at the top of `/etc/nginx/nginx.conf`
+
+You can easily create the default configuration like so.
 
 ```
 mkdir /etc/nginx
