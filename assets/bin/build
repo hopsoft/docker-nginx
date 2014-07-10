@@ -7,7 +7,7 @@ apt-get -y --force-yes install nginx-extras
 rm -f /etc/service/nginx/down
 
 mkdir -p /etc/service/nginx
-cp /opt/hopsoft/nginx/daemons/nginx.sh /etc/service/daemons/run
+cp /opt/hopsoft/nginx/daemons/nginx.sh /etc/service/nginx/run
 
 apt-get clean
 rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
