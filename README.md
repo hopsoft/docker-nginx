@@ -16,8 +16,6 @@ cp -R ./docker-nginx/nginx_conf/* /etc/nginx
 rm -rf ./docker-nginx
 ```
 
-__Important__: Be sure to add `daemon off;` at the top of `/etc/nginx/nginx.conf`
-
 ## Starting the container
 
 ```sh
