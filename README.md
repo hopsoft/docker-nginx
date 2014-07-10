@@ -32,13 +32,13 @@ For example, here's how I'm starting the nginx container for one of my apps.
 
 ```
 # start the app
-sudo docker run -d --name app -h $(hostname) -v /path/to/app -p 5000:5000 namespace/app
+sudo docker run -d --name app -v /path/to/app -p 5000:5000 namespace/app
 
 # start nginx
 sudo docker run --name nginx -d --link app:app -p 80:80 --volumes-from app -v /etc/nginx:/etc/nginx:r hopsoft/nginx
 ```
 
-This allows a simplified nginx app config.
+This allows a simple nginx app config.
 
 ```
 # /etc/nginx/sites-enabled/app.conf
