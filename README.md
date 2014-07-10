@@ -7,8 +7,6 @@ This image contains a basic install of nginx-extras.
 Create an nginx configuration directory on the host at `/etc/nginx`,
 then configure nginx to meet your needs.
 
-__Important__: Be sure to add `daemon off` at the top of `/etc/nginx/nginx.conf`
-
 You can easily create the default configuration like so.
 
 ```
@@ -17,6 +15,8 @@ git clone https://github.com/hopsoft/docker-nginx.git
 cp -R ./docker-nginx/nginx_conf/* /etc/nginx
 rm -rf ./docker-nginx
 ```
+
+__Important__: Be sure to add `daemon off;` at the top of `/etc/nginx/nginx.conf`
 
 ## Starting the container
 
