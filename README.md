@@ -22,7 +22,7 @@ rm -rf ./docker-nginx
 sudo docker run --name nginx -d -p 80:80 -p 443:443 -v /var/log -v /etc/nginx:/etc/nginx:r hopsoft/nginx
 ```
 
-__Note__: If you are reverse proxying to a contanerized app,
+__Note__: If you are reverse proxying to a containerized app,
 be sure to look at the following Docker features.
 
 - [Linking Containers](https://docs.docker.com/userguide/dockerlinks/) - so you can dynamically reference your app container's assigned ip address etc...
