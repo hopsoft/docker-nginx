@@ -71,6 +71,8 @@ server {
 
 ## Reconfigure & Restart
 
+Need to tweak the config & restart nginx? No problem.
+
 ```
 vim /etc/nginx/nginx.conf
 vim /etc/nginx/sites-enabled/YOUR_SITE.conf
