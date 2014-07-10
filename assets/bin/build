@@ -9,6 +9,9 @@ rm -f /etc/service/nginx/down
 mkdir -p /etc/service/nginx
 cp /opt/hopsoft/nginx/daemons/nginx.sh /etc/service/nginx/run
 
+cp /opt/hopsoft/nginx/logrotate /etc/logrotate.d/nginx
+chmod 644 /etc/logrotate.d/nginx
+
 apt-get clean
 rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
